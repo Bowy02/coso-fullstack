@@ -1,0 +1,37 @@
+/* CUSTOM PROPIERTYS */
+:root {
+    
+    /* COLORES */
+    --primario: #fff;
+    --oscuro: #212121;
+    --primario: #FFC107;
+    --secundario: #0097A7;
+    --gris:#757575;
+
+    /* FUENTE */
+    --fuente-principal: "Google Sans", sans-serif;
+
+
+}
+
+/*ESTO HACE QUE SE "RESETEAN LOS VALORES" Y SE AJUSTE BIEN LOS REM Y A LOS OTROS DISPOSITIVOS*/
+html {
+    font-size: 62.5%; 
+}
+body {
+    font-size: 16px; /* 1rem = 10px*/
+    font-family: var(--fuente-principal);
+}
+
+
+/* CODIGO GENERAL */
+.tiulo {
+    text-align: center;
+    font-size: 3.8rem;
+    font-weight: 700;
+}
+
+
+.titulo span {
+    font-size: 2rem;
+}
