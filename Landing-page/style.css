@@ -2,7 +2,7 @@
 :root {
     
     /* COLORES */
-    --primario: #fff;
+    --claro: #fff;
     --oscuro: #212121;
     --primario: #FFC107;
     --secundario: #0097A7;
@@ -10,7 +10,6 @@
 
     /* FUENTE */
     --fuente-principal: "Google Sans", sans-serif;
-
 
 }
 
@@ -23,15 +22,44 @@ body {
     font-family: var(--fuente-principal);
 }
 
-
 /* CODIGO GENERAL */
 .tiulo {
     text-align: center;
     font-size: 3.8rem;
-    font-weight: 700;
 }
-
 
 .titulo span {
     font-size: 2rem;
+}
+
+.contenedor {
+    width: 120rem;
+    margin: 0 auto;
+
+    /* Marguenes crean separación haciea el alrededor del contenido, la clase margin (el solitario), seguiría esta composición:
+    margin-top: 0;
+    margin-right: auto;
+    margin-bottom: 0;
+    margin-left: auto;
+
+    Si dejamos solo 2 valores, el primero será el margin de arriba y abajo y el segundo valor izquierda y derecha
+    */
+
+}
+    
+
+/* BARRA DE NAVEGACION */
+.nav-bg {
+    background-color: var(--secundario);
+}
+.navegacion-principal {
+    padding: 1rem;
+    /* Flex solo se aplica en la clase padre donde se quiere modificar el contendio, como se quieremodificar los enlaces, el padre en .navegacion-principal*/
+    display: flex;
+    justify-content: space-between;
+}
+.navegacion-principal a {
+    color: var(--claro);
+    text-decoration: none;
+
 }
