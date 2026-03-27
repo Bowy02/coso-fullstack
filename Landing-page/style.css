@@ -1,12 +1,12 @@
 /* CUSTOM PROPIERTYS */
 :root {
-    
+
     /* COLORES */
     --claro: #fff;
     --oscuro: #212121;
     --primario: #FFC107;
     --secundario: #0097A7;
-    --gris:#757575;
+    --gris: #757575;
 
     /* FUENTE */
     --fuente-principal: "Google Sans", sans-serif;
@@ -15,15 +15,17 @@
 
 /*ESTO HACE QUE SE "RESETEAN LOS VALORES" Y SE AJUSTE BIEN LOS REM Y A LOS OTROS DISPOSITIVOS*/
 html {
-    font-size: 62.5%; 
+    font-size: 62.5%;
 }
+
 body {
-    font-size: 16px; /* 1rem = 10px*/
+    font-size: 16px;
+    /* 1rem = 10px*/
     font-family: var(--fuente-principal);
 }
 
 /* CODIGO GENERAL */
-.tiulo {
+.titulo {
     text-align: center;
     font-size: 3.8rem;
 }
@@ -46,20 +48,30 @@ body {
     */
 
 }
-    
+
 
 /* BARRA DE NAVEGACION */
 .nav-bg {
     background-color: var(--secundario);
 }
+
 .navegacion-principal {
-    padding: 1rem;
     /* Flex solo se aplica en la clase padre donde se quiere modificar el contendio, como se quieremodificar los enlaces, el padre en .navegacion-principal*/
     display: flex;
     justify-content: space-between;
+    /*Para el row, si no usamos align-items que es para los column*/
 }
+
 .navegacion-principal a {
     color: var(--claro);
     text-decoration: none;
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 1rem;
 
+}
+
+.navegacion-principal a:hover {
+    background-color: var(--primario);
+    color: var(--oscuro);
 }
