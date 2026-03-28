@@ -1,0 +1,46 @@
+
+:root {
+    /*Generales*/
+    --claro-oscuro: #1D1E2C;
+    --hueso-gris: #E3DAC9;
+    --blanco-ahumado: #F5F5F5;
+
+    /*Hover*/
+    --techcyber: #56D4DD;
+
+    /*Aun sin asignar*/
+    --dorado: #FFD700;
+    --dorado-pastel: #FCEABB;
+
+    /*Fuentes*/
+    --fuente-principal: "Google Sans", sans-serif;
+}
+
+/* RESETEO DE VALORES */
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background-color: var(--claro-oscuro);
+    font-size: 16px;
+    /* 1rem = 10px*/
+    font-family: var(--fuente-principal);
+}
+
+/* MODIFICACIONES GENERALES */
+
+h1, h2, h3, p {
+    color: var(--hueso-gris);
+}
+
+a {
+    text-decoration: none;
+    color: var(--blanco-ahumado);
+}
+
+a:hover {
+    color: var(--techcyber);
+}
+
+/* MODIFICACIONES CONCRETAS */
