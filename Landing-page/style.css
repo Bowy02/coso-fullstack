@@ -35,7 +35,7 @@ body {
 }
 
 .contenedor {
-    width: 120rem;
+    max-width: 120rem;
     margin: 0 auto;
 
     /* Marguenes crean separación haciea el alrededor del contenido, la clase margin (el solitario), seguiría esta composición:
@@ -58,11 +58,20 @@ body {
 .navegacion-principal {
     /* Flex solo se aplica en la clase padre donde se quiere modificar el contendio, como se quieremodificar los enlaces, el padre en .navegacion-principal*/
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     /*Para el row, si no usamos align-items que es para los column*/
 }
 
+@media (min-width: 768px) {
+    .navegacion-principal {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
 .navegacion-principal a {
+    display: block;
+    text-align: center;
     color: var(--claro);
     text-decoration: none;
     font-size: 2rem;
@@ -77,4 +86,5 @@ body {
 }
 
 @media (min-width: 480px) {
+
 }
