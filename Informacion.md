@@ -18,3 +18,7 @@ Hay que tener en cuenta varias cosas:
 - Tamaño de relleno (Padding)
 - Tamaño del borde y margen
   
+## CSS GRID
+Permite definir el tamaño y las posicionesde los elementos
+
+- En flexbox el contenido se ubica automaticamente de arriba hacia abajo o al reves, en grid se agrupa en un áreas definidas. Como una tabla de excel por poner un ejemplo.
