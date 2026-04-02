@@ -32,3 +32,7 @@ Lo usaremos para la alineación o distribución de los elementos que estarán de
 
 ### CSS GRID
 Para definir el layout del sitio web como pueden ser las columnas o contenedores de elementos
+
+## BEM
+### ¿QUE ES BEM?
+Es una metodología para crear código reutilizable y ordenado en tus proyectos con CSS.
