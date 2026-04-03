@@ -1,7 +1,5 @@
 # INFORMACION DEL CURSO
 
-
-
 ## Dimensiones de pantalla estandaren framework
 **Telefono y tablets**
 480 Para telefono
@@ -36,3 +34,22 @@ Para definir el layout del sitio web como pueden ser las columnas o contenedores
 ## BEM
 ### ¿QUE ES BEM?
 Es una metodología para crear código reutilizable y ordenado en tus proyectos con CSS.
+
+#### REGLAS DE BEM
+##### Bloques
+Son un Contenedor, si una sección por si sola es significativa y no requiere de otras secciones para su apariencia (CSS) deberá deberá ir en un bloque
+```
+<div class="cliente">...</div>
+```
+
+##### Elementos
+Parte de un bloque, depende del bloque y no es por si solo significativo; tienen la cracterística de que utilizan el nombre del bloque y después doble guion bajo__
+```
+<p class="cliente__nombre">...</p>
+```
+
+##### Modificadores
+¿Un Bloque o Elemento tendrá una variante? Se utiliza un modificador que es una "bandera"que avisa que ese elemento tendráun diseño diferente.
+```
+<p class="cliente__nombre--ceo">...</p>
+```
